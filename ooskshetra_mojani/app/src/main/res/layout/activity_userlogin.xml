@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".userlogin">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="5dp"
+        android:text=" श्री संत जनार्दन स्वामी नगर, ता. जि. नाशिक"
+        android:textAlignment="center"
+        android:textColor="#131212"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/nigadesoftwaretechnologies_logo" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="157dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="36dp"
+        android:text="App Developed By "
+        android:textAlignment="textStart"
+        android:textColor="#0F0F0F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvFactorywebsite" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="382dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="7dp"
+        android:text="Software Technologies (opc) Private Limited"
+        android:textAlignment="textStart"
+        android:textColor="#0D0D0E"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="83dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:text=" पासवर्ड"
+        android:textAlignment="textStart"
+        android:textColor="#131212"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="82dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="18dp"
+        android:text=" वापरकर्ता"
+        android:textAlignment="textStart"
+        android:textColor="#131212"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="7dp"
+        android:text=" लॉगिन"
+        android:textAlignment="center"
+        android:textColor="#131212"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="292dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="5dp"
+        android:text="नाशिक सहकारी साखर कारखाना लि. द्वारा अष्टलक्ष्मी शुगर इथॅनॉल अॅन्ड एनर्जी"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#92140B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtUserid"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <Button
+        android:id="@+id/btnMeasurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        android:background="#FF9800"
+        android:text="Login"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtServer" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="265dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserid" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="1dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/nigadesoftwaretechnologies_logo_3"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kadwalogo"/>
+
+    <TextView
+        android:id="@+id/txvWebsitelink1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="https://www.nigadesoftware.com"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/txvFactorywebsite"
+        android:layout_width="359dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="www.swapp.co.in"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Id"
+        app:layout_constraintTop_toBottomOf="@+id/btnMeasurement"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="18dp"
+        android:text="Server"
+        android:textColor="#0E0E0E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/txtServer"
+        android:layout_width="69dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

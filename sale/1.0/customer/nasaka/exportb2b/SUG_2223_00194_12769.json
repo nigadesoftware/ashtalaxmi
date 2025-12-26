@@ -1,0 +1,108 @@
+{
+    "Version": "1.1",
+    "TranDtls": {
+        "TaxSch": "GST",
+        "SupTyp": "B2B",
+        "IgstOnIntra": "N",
+        "RegRev": "N",
+        "EcmGstin": null
+    },
+    "DocDtls": {
+        "Typ": "INV",
+        "No": "SUG/2223/00194",
+        "Dt": "16/04/2022"
+    },
+    "SellerDtls": {
+        "Gstin": "27AAXCA2984P1ZJ",
+        "LglNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "TrdNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "Addr1": "RAJARAMNAGAR, TAL - DINDORI DIST- NASHIK",
+        "Addr2": null,
+        "Loc": "Palase",
+        "Pin": 422209,
+        "Stcd": "27",
+        "Ph": null,
+        "Em": "kadwasakar@yahoo.com"
+    },
+    "BuyerDtls": {
+        "Gstin": "27CVPPD1710A1Z5",
+        "LglNm": " DESHMUKH BROTHERS",
+        "TrdNm": " DESHMUKH BROTHERS",
+        "Pos": "27",
+        "Addr1": "G. NO 45, AT POST JAULKEVANI, TEL- DINDORI, Nashik, Maharashtra, 422209",
+        "Addr2": "JAULKEVANI",
+        "Loc": "JAULKEVANI",
+        "Pin": 422209,
+        "Stcd": "27",
+        "Ph": null,
+        "Em": null
+    },
+    "ShipDtls": {
+        "Gstin": "27CVPPD1710A1Z5",
+        "LglNm": " DESHMUKH BROTHERS",
+        "TrdNm": " DESHMUKH BROTHERS",
+        "Addr1": "G. NO 45, AT POST JAULKEVANI, TEL- DINDORI, Nashik, Maharashtra, 422209",
+        "Addr2": "JAULKEVANI",
+        "Loc": "JAULKEVANI",
+        "Pin": 422209,
+        "Stcd": "27"
+    },
+    "ValDtls": {
+        "AssVal": 227500,
+        "IgstVal": 0,
+        "CgstVal": 5688,
+        "SgstVal": 5688,
+        "CesVal": 0,
+        "StCesVal": 0,
+        "Discount": 0,
+        "OthChrg": 0,
+        "RndOffAmt": 0,
+        "TotInvVal": 238875
+    },
+    "ExpDtls": {
+        "ShipBNo": null,
+        "ShipBDt": null,
+        "Port": null,
+        "RefClm": null,
+        "ForCur": null,
+        "CntCode": null,
+        "ExpDuty": 0
+    },
+    "EwbDtls": {
+        "TransId": "27CVPPD1710A1Z5",
+        "TransName": " DESHMUKH BROTHERS",
+        "TransMode": "1",
+        "Distance": 0,
+        "TransDocNo": null,
+        "TransDocDt": null,
+        "VehNo": "MH15HH1344",
+        "VehType": "R"
+    },
+    "ItemList": [
+        {
+            "SlNo": "1",
+            "PrdDesc": "White Sugar-S30 50Kg PP-20202021",
+            "IsServc": "N",
+            "HsnCd": "170114",
+            "Qty": 70,
+            "Unit": "QTL",
+            "UnitPrice": 3250,
+            "TotAmt": 227500,
+            "Discount": 0,
+            "PreTaxVal": 0,
+            "AssAmt": 227500,
+            "GstRt": 5,
+            "IgstAmt": 0,
+            "CgstAmt": 5688,
+            "SgstAmt": 5688,
+            "CesRt": 0,
+            "CesAmt": 0,
+            "CesNonAdvlAmt": 0,
+            "StateCesRt": 0,
+            "StateCesAmt": 0,
+            "StateCesNonAdvlAmt": 0,
+            "OthChrg": 0,
+            "TotItemVal": 238875
+        }
+    ]
+}

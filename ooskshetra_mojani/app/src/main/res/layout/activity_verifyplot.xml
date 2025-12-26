@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".verifyplot">
+
+    <Button
+        android:id="@+id/btnPassbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="31dp"
+        android:background="#FF9800"
+        android:text="Passbook"
+        app:layout_constraintStart_toEndOf="@+id/btnIdproof"
+        app:layout_constraintTop_toBottomOf="@+id/imvPassbook" />
+
+    <Button
+        android:id="@+id/btnIdproof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:background="#FF9800"
+        android:text="ID Proof"
+        app:layout_constraintStart_toEndOf="@+id/btnSelfie"
+        app:layout_constraintTop_toBottomOf="@+id/imvIdproof" />
+
+    <ImageView
+        android:id="@+id/imvPassbook"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/imvIdproof"
+        app:layout_constraintTop_toBottomOf="@+id/txtRemark"
+        app:srcCompat="@drawable/kadwalogo" />
+
+    <ImageView
+        android:id="@+id/imvIdproof"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toEndOf="@+id/imvSelfie"
+        app:layout_constraintTop_toBottomOf="@+id/txtRemark"
+        app:srcCompat="@drawable/kadwalogo" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="58dp"
+        android:text="शेरा"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtRemark"
+        android:layout_width="300dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btnCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="20dp"
+        android:background="#FF9800"
+        android:onClick="updateremark"
+        android:text="Completed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIdproof" />
+
+    <Button
+        android:id="@+id/btnSelfie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:background="#FF9800"
+        android:text="Selfie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvSelfie" />
+
+    <ImageView
+        android:id="@+id/imvSelfie"
+        android:layout_width="106dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="9dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRemark"
+        app:srcCompat="@drawable/kadwalogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

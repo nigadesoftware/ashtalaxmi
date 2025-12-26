@@ -1,0 +1,87 @@
+{
+    "Version": "1.1",
+    "TranDtls": {
+        "TaxSch": "GST",
+        "SupTyp": "B2B",
+        "IgstOnIntra": "No",
+        "RegRev": "No",
+        "EcmGstin": null
+    },
+    "DocDtls": {
+        "Typ": "Tax Invoice",
+        "No": "SUG/2223/00001",
+        "Dt": "01/12/2022"
+    },
+    "SellerDtls": {
+        "Gstin": "27AAXCA2984P1ZJ",
+        "LglNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "TrdNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "Addr1": "RAJARAMNAGAR, TAL - DINDORI DIST- NASHIK",
+        "Addr2": null,
+        "Loc": "MATEREWADI",
+        "Pin": 422209,
+        "Stcd": "Maharashtra",
+        "Ph": null,
+        "Em": "kadwasakar@yahoo.com"
+    },
+    "BuyerDtls": [],
+    "ShipDtls": [],
+    "ValDtls": {
+        "AssVal": 334800,
+        "IgstVal": 0,
+        "CgstVal": 8370,
+        "SgstVal": 8370,
+        "CesVal": 0,
+        "StCesVal": 0,
+        "Discount": 0,
+        "OthChrg": 0,
+        "RndOffAmt": 0,
+        "TotInvVal": 351540
+    },
+    "ExpDtls": {
+        "ShipBNo": null,
+        "ShipBDt": null,
+        "Port": null,
+        "RefClm": null,
+        "ForCur": null,
+        "CntCode": null,
+        "ExpDuty": 0
+    },
+    "EwbDtls": {
+        "TransId": "27AANPD2375G1ZP",
+        "TransName": "Rajan Bacchumal And Company",
+        "TransMode": "Road",
+        "Distance": 20,
+        "TransDocNo": null,
+        "TransDocDt": null,
+        "VehNo": "MH04DD7399",
+        "VehType": "Regular"
+    },
+    "ItemList": [
+        {
+            "SlNo": "1",
+            "PrdDesc": "White Sugar-S30 50Kg PP-20222023",
+            "IsServc": "N",
+            "HsnCd": "170114",
+            "Qty": 100,
+            "Unit": "QUINTAL",
+            "UnitPrice": 3348,
+            "TotAmt": 334800,
+            "Discount": 0,
+            "PreTaxVal": 0,
+            "AssAmt": 334800,
+            "GstRt": 5,
+            "IgstAmt": 0,
+            "CgstAmt": 8370,
+            "SgstAmt": 8370,
+            "CesRt": 0,
+            "CesAmt": 0,
+            "CesNonAdvlAmt": 0,
+            "StateCesRt": 0,
+            "StateCesAmt": 0,
+            "StateCesNonAdvlAmt": 0,
+            "OthChrg": 0,
+            "TotItemVal": 351540
+        }
+    ]
+}

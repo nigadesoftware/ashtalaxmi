@@ -1,0 +1,8 @@
+CACHE MANIFEST
+# v1.0 : 10-08-2014
+ 
+CACHE:
+# pages
+testlocal.html
+testlocal.php 
+NETWORK:*

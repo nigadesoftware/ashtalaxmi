@@ -1,0 +1,164 @@
+            body
+            {
+                background-color: #fff;
+            }
+            header
+            {
+                background-color: #fff;
+                min-height: 38px;
+                color: #070;
+                font-family: Arial;
+                font-size: 19px;
+            }
+            ul {
+                list-style-type:none;
+                padding:5;
+                margin:0;
+                text-align: left;
+                width: 250px;
+            }
+            
+            ul li a {
+                text-decoration:none;
+                padding: 5px 10px 5px 10px;
+            }
+            
+            ul li a:hover {
+                background-color:#FFC13B;
+                color:rgb(45, 63, 16);
+            }
+
+            ul li {
+                margin-bottom:1px;
+                background-color:#b49f9d;
+            }
+            nav
+            {
+                width: 300px;
+                float: left;
+                list-style-type: none;
+                font-family: verdana;
+                font-size: 15px;
+                color: black;
+                line-height: 30px;
+            }
+            a.navbar
+			{
+				color: black;
+			}
+			a.servicebar
+			{
+				color: #080;
+			}
+            article
+            {
+                background-color: #fff;
+                display: table;
+                margin-left: 0px;
+                padding-left: 10px;
+                font-family: Verdana;
+                font-size: 15px;
+            }
+            section
+            {
+                margin-left: 0px;
+                margin-right: 15px;
+                float: left;
+                text-align: justify;
+                color: #000;
+                line-height: 23px;
+            }
+            footer
+            {
+                float: bottom;
+                color: #000;
+                font-family: verdana;
+                font-size: 12px;
+            }
+            div
+            {
+                float:left;
+            }
+            input
+            {
+                outline: none;
+                background-color: whitesmoke;
+                border-radius: 10px;
+            }
+            input:focus, textarea:focus
+            {
+                border-radius: 10px;
+                outline: none;
+                background-color:#FFEEAA;
+            }
+            input[readonly],select:disabled
+            {
+                background-color:#7fb5da;
+                outline: none;
+                color:black;
+                cursor:no-drop;
+            }
+            label
+            {
+                color: #000;
+            }
+            label.thick 
+            {
+                font-weight: bold;
+            }
+            select
+            {
+                background-color:whitesmoke;
+                border-radius: 10px;
+                outline: none;
+                cursor:pointer;
+            }
+            select:focus
+            {
+                background-color: #FFEEAA;
+            }
+            
+            .button123 
+            {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: green;
+                border: none;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 14px;
+                padding: 20px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+            }
+            .button123:focus
+            {
+                background-color: #FFEEAA;
+                color:green;
+            }
+        .button123 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button123 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button123:hover span {
+        padding-right: 25px;
+        }
+
+        .button123:hover span:after {
+        opacity: 1;
+        right: 0;
+        }

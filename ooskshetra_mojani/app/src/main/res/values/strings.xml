@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ऊसक्षेत्र मोजणी</string>
+    <string name="title_activity_userlogin">userlogin</string>
+    <string name="title_activity_home">home</string>
+</resources>

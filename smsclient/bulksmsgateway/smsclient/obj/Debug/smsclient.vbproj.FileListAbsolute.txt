@@ -1,0 +1,19 @@
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\bin\Debug\smsclient.exe
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\bin\Debug\smsclient.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\bin\Debug\smslib.dll
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\bin\Debug\smslib.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\obj\Debug\smsclient.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\obj\Debug\smsclient.MainForm.resources
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\obj\Debug\smsclient.vbproj.GenerateResource.Cache
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\obj\Debug\smsclient.exe
+C:\Users\admin\Documents\SharpDevelop Projects\smsclient\smsclient\obj\Debug\smsclient.pdb
+D:\swappcoin\kadwa\smsclient\smsclient\bin\Debug\smsclient.exe
+D:\swappcoin\kadwa\smsclient\smsclient\bin\Debug\smsclient.pdb
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.MainForm.resources
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.vbproj.GenerateResource.Cache
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.exe
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.pdb
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.fortnightselection.resources
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.farmerfortnightsms.resources
+D:\swappcoin\kadwa\smsclient\smsclient\obj\Debug\smsclient.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\smsclient\smsclient\bin\Debug\smsclient.exe.config

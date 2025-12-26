@@ -1,0 +1,7 @@
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\obj\Debug\unicodetoiscii.MainForm.resources
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\obj\Debug\unicodetoiscii.vbproj.GenerateResource.Cache
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\bin\Debug\unicodetoiscii.exe
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\bin\Debug\unicodetoiscii.pdb
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\obj\Debug\unicodetoiscii.exe
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\obj\Debug\unicodetoiscii.pdb
+D:\swappcoin\kadwa\unicodetoiscii\unicodetoiscii\unicodetoiscii\obj\Debug\unicodetoiscii.vbprojResolveAssemblyReference.cache

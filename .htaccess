@@ -1,0 +1,12 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^sugar\.swapp\.co\.in$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.sugar\.swapp\.co\.in$
+RewriteRule ^/?$ "http\:\/\/www\.swapp\.co\.in\/sugar\/index\.html" [R=301,L]
+
+<IfModule mod_headers.c>
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires 0
+</IfModule>
+

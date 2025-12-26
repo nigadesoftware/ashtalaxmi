@@ -1,0 +1,87 @@
+{
+    "Version": "1.1",
+    "TranDtls": {
+        "TaxSch": "GST",
+        "SupTyp": "B2B",
+        "IgstOnIntra": "No",
+        "RegRev": "No",
+        "EcmGstin": null
+    },
+    "DocDtls": {
+        "Typ": "Tax Invoice",
+        "No": "SUG/2223/00136",
+        "Dt": "03/02/2023"
+    },
+    "SellerDtls": {
+        "Gstin": "27AAXCA2984P1ZJ",
+        "LglNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "TrdNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "Addr1": "RAJARAMNAGAR, TAL - DINDORI DIST- NASHIK",
+        "Addr2": null,
+        "Loc": "MATEREWADI",
+        "Pin": 422209,
+        "Stcd": "Maharashtra",
+        "Ph": null,
+        "Em": "kadwasakar@yahoo.com"
+    },
+    "BuyerDtls": [],
+    "ShipDtls": [],
+    "ValDtls": {
+        "AssVal": 890330,
+        "IgstVal": 890,
+        "CgstVal": 0,
+        "SgstVal": 0,
+        "CesVal": 0,
+        "StCesVal": 0,
+        "Discount": 0,
+        "OthChrg": 0,
+        "RndOffAmt": 0,
+        "TotInvVal": 891220
+    },
+    "ExpDtls": {
+        "ShipBNo": null,
+        "ShipBDt": null,
+        "Port": null,
+        "RefClm": null,
+        "ForCur": null,
+        "CntCode": null,
+        "ExpDuty": 0
+    },
+    "EwbDtls": {
+        "TransId": "24AADCJ1550A1ZB",
+        "TransName": "J LAL FOODS PRIVATE LIMITED",
+        "TransMode": "Road",
+        "Distance": 600,
+        "TransDocNo": null,
+        "TransDocDt": null,
+        "VehNo": "MH46F1838",
+        "VehType": "Regular"
+    },
+    "ItemList": [
+        {
+            "SlNo": "1",
+            "PrdDesc": "White Sugar-S30-20222023",
+            "IsServc": "N",
+            "HsnCd": "170114",
+            "Qty": 230,
+            "Unit": "QUINTAL",
+            "UnitPrice": 3871,
+            "TotAmt": 890330,
+            "Discount": 0,
+            "PreTaxVal": 0,
+            "AssAmt": 890330,
+            "GstRt": 0,
+            "IgstAmt": 890,
+            "CgstAmt": 0,
+            "SgstAmt": 0,
+            "CesRt": 0,
+            "CesAmt": 0,
+            "CesNonAdvlAmt": 0,
+            "StateCesRt": 0,
+            "StateCesAmt": 0,
+            "StateCesNonAdvlAmt": 0,
+            "OthChrg": 0,
+            "TotItemVal": 891220
+        }
+    ]
+}

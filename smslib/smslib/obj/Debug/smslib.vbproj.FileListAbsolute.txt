@@ -1,0 +1,10 @@
+C:\Users\admin\Documents\SharpDevelop Projects\smslib\smslib\obj\Debug\smslib.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\SharpDevelop Projects\smslib\smslib\bin\Debug\smslib.dll
+C:\Users\admin\Documents\SharpDevelop Projects\smslib\smslib\bin\Debug\smslib.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\smslib\smslib\obj\Debug\smslib.dll
+C:\Users\admin\Documents\SharpDevelop Projects\smslib\smslib\obj\Debug\smslib.pdb
+D:\swappcoin\kadwa\smslib\smslib\bin\Debug\smslib.dll
+D:\swappcoin\kadwa\smslib\smslib\bin\Debug\smslib.pdb
+D:\swappcoin\kadwa\smslib\smslib\obj\Debug\smslib.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\smslib\smslib\obj\Debug\smslib.dll
+D:\swappcoin\kadwa\smslib\smslib\obj\Debug\smslib.pdb

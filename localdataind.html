@@ -1,0 +1,10 @@
+(() => {
+    'use strict'
+  
+    if (!('indexedDB' in window)) {
+      console.warn('IndexedDB not supported')
+      return
+    }
+  
+    //...IndexedDB code
+  })()

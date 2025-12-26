@@ -1,0 +1,42 @@
+-- Create table
+create table EMPLOYEETRANSACTION
+(
+  transactionnumber       NUMBER not null,
+  employeecode            NUMBER,
+  transactioncategorycode NUMBER,
+  fromdate                DATE,
+  todate                  DATE,
+  basic                   NUMBER,
+  gradecode               NUMBER,
+  sectioncode             NUMBER,
+  pfcode                  NUMBER
+)
+tablespace USERS
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table EMPLOYEETRANSACTION
+  add constraint PKTRNNUM primary key (TRANSACTIONNUMBER)
+  using index 
+  tablespace USERS
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+-- Grant/Revoke object privileges 
+grant select on EMPLOYEETRANSACTION to NST_NASAKA_AGRICULTURE;
+grant select on EMPLOYEETRANSACTION to SWAPP_KADWA_DB;

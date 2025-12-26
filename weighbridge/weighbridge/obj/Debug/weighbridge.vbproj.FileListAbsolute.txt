@@ -1,0 +1,7 @@
+D:\swappcoin\kadwa\weighbridge\weighbridge\bin\Debug\weighbridge.exe
+D:\swappcoin\kadwa\weighbridge\weighbridge\obj\Debug\weighbridge.MainForm.resources
+D:\swappcoin\kadwa\weighbridge\weighbridge\obj\Debug\weighbridge.exe
+D:\swappcoin\kadwa\weighbridge\weighbridge\obj\Debug\weighbridge.pdb
+D:\swappcoin\kadwa\weighbridge\weighbridge\bin\Debug\weighbridge.pdb
+D:\swappcoin\kadwa\weighbridge\weighbridge\obj\Debug\weighbridge.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\weighbridge\weighbridge\obj\Debug\weighbridge.vbproj.GenerateResource.Cache

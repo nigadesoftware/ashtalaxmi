@@ -1,0 +1,108 @@
+{
+    "Version": "1.1",
+    "TranDtls": {
+        "TaxSch": "GST",
+        "SupTyp": "B2B",
+        "IgstOnIntra": "No",
+        "RegRev": "No",
+        "EcmGstin": null
+    },
+    "DocDtls": {
+        "Typ": "INV",
+        "No": "SUG/2223/00195",
+        "Dt": "16/04/2022"
+    },
+    "SellerDtls": {
+        "Gstin": "27AAXCA2984P1ZJ",
+        "LglNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "TrdNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+        "Addr1": "RAJARAMNAGAR, TAL - DINDORI DIST- NASHIK",
+        "Addr2": null,
+        "Loc": "Palase",
+        "Pin": 422209,
+        "Stcd": "27",
+        "Ph": null,
+        "Em": "kadwasakar@yahoo.com"
+    },
+    "BuyerDtls": {
+        "Gstin": "27ABCPL0165G1ZY",
+        "LglNm": "DEEP TRADERS,NASHIK",
+        "TrdNm": "DEEP TRADERS,NASHIK",
+        "Pos": "27",
+        "Addr1": "PLOT NO 3,GURU GOVINDSINGH SOCIETY,PANCHVATI,Nashik 422003",
+        "Addr2": "Nashik",
+        "Loc": "Nashik",
+        "Pin": 422003,
+        "Stcd": "27",
+        "Ph": null,
+        "Em": null
+    },
+    "ShipDtls": {
+        "Gstin": "27ABCPL0165G1ZY",
+        "LglNm": "DEEP TRADERS,NASHIK",
+        "TrdNm": "DEEP TRADERS,NASHIK",
+        "Addr1": "PLOT NO 3,GURU GOVINDSINGH SOCIETY,PANCHVATI,Nashik 422003",
+        "Addr2": "Nashik",
+        "Loc": "Nashik",
+        "Pin": 422003,
+        "Stcd": "27"
+    },
+    "ValDtls": {
+        "AssVal": 95730,
+        "IgstVal": 0,
+        "CgstVal": 2393,
+        "SgstVal": 2393,
+        "CesVal": 0,
+        "StCesVal": 0,
+        "Discount": 0,
+        "OthChrg": 0,
+        "RndOffAmt": 0,
+        "TotInvVal": 100517
+    },
+    "ExpDtls": {
+        "ShipBNo": null,
+        "ShipBDt": null,
+        "Port": null,
+        "RefClm": null,
+        "ForCur": null,
+        "CntCode": null,
+        "ExpDuty": 0
+    },
+    "EwbDtls": {
+        "TransId": "27ABCPL0165G1ZY",
+        "TransName": "DEEP TRADERS,NASHIK",
+        "TransMode": "Road",
+        "Distance": 29,
+        "TransDocNo": null,
+        "TransDocDt": null,
+        "VehNo": "MH15EG3819",
+        "VehType": "Regular"
+    },
+    "ItemList": [
+        {
+            "SlNo": 1,
+            "PrdDesc": "White Sugar-SS30 50Kg PP-20202021",
+            "IsServc": "N",
+            "HsnCd": 170114,
+            "Qty": 30,
+            "Unit": "QUINTAL",
+            "UnitPrice": 3191,
+            "TotAmt": 95730,
+            "Discount": 0,
+            "PreTaxVal": 0,
+            "AssAmt": 95730,
+            "GstRt": 5,
+            "IgstAmt": 0,
+            "CgstAmt": 2393,
+            "SgstAmt": 2393,
+            "CesRt": 0,
+            "CesAmt": 0,
+            "CesNonAdvlAmt": 0,
+            "StateCesRt": 0,
+            "StateCesAmt": 0,
+            "StateCesNonAdvlAmt": 0,
+            "OthChrg": 0,
+            "TotItemVal": 100517
+        }
+    ]
+}

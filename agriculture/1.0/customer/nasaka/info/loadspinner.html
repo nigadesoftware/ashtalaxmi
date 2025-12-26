@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type=”text/css”>
+            .spinner 
+            {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-left: -50px; /* half width of the spinner gif */
+                margin-top: -50px; /* half height of the spinner gif */
+                text-align:center;
+                z-index:1234;
+                overflow: auto;
+                width: 100px; /* width of the spinner gif */
+                height: 102px; /*hight of the spinner gif +2px to fix IE8 issue */
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#spinner").bind("ajaxSend", function() {
+                    $(this).show();
+                }).bind("ajaxStop", function() {
+                    $(this).hide();
+                }).bind("ajaxError", function() {
+                    $(this).hide();
+                });
+             
+                 });
+            </script>
+        <title>Contract</title>
+    </head>
+    <body>
+        <div id="spinner" class="spinner">
+            <img id="img-spinner" src="../img/ajax-loader.gif" alt="Loading"/>
+        </div>
+        
+        </body>
+</html>

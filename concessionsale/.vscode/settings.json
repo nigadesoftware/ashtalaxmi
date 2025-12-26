@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "window.zoomLevel": 1.5,
+      // Points to the PHP executable.
+      "php.validate.executablePath": "d:/xampp/php/php.exe",
+    //"php.validate.executablePath": "/opt/lampp/bin/php",
+    "editor.fontSize": 14,
+    "files.autoSave": "off"
+}

@@ -1,0 +1,151 @@
+            body
+            {
+                background-color: #fff;
+            }
+            header
+            {
+                background-color: #fff;
+                min-height: 38px;
+                color: #070;
+                font-family: Arial;
+                font-size: 19px;
+            }
+            nav
+            {
+                width: 300px;
+                float: left;
+                list-style-type: none;
+                font-family: verdana;
+                font-size: 15px;
+                color: #f48;
+                line-height: 30px;
+            }
+            a.navbar
+			{
+				color: #f48;
+			}
+			a.servicebar
+			{
+				color: #080;
+			}
+            article
+            {
+                background-color: #fff;
+                display: table;
+                margin-left: 0px;
+                padding-left: 10px;
+                font-family: Verdana;
+                font-size: 15px;
+            }
+            section
+            {
+                margin-left: 0px;
+                margin-right: 15px;
+                float: left;
+                text-align: justify;
+                color: #000;
+                line-height: 23px;
+            }
+            footer
+            {
+                float: bottom;
+                color: #000;
+                font-family: verdana;
+                font-size: 12px;
+            }
+            div
+            {
+                float:left;
+            }
+            input
+            {
+                outline: none;
+                background-color: white;
+                border-radius: 10px;
+            }
+            input:focus, textarea:focus
+            {
+                border-radius: 10px;
+                outline: none;
+                background-color:#FFEEAA;
+            }
+            input[readonly],select:disabled
+            {
+                background-color:#CCD6A6;
+                color:Black;
+                outline: none;
+                cursor:no-drop;
+                border:0px;
+            }
+            label
+            {
+                color: #000;
+            }
+            label.thick 
+            {
+                font-weight: bold;
+            }
+            select
+            {
+                background-color:white;
+                border-radius: 12px;
+                font-size: 12px;
+                outline: none;
+                cursor:pointer;
+            }
+            select:focus
+            {
+                background-color: #FFEEAA;
+            }
+            
+            .button123 
+            {
+                display: inline-block;
+                border-radius: 4px;
+                background-color: green;
+                border: none;
+                color: white;
+                text-align: center;
+                font-size: 14px;
+                padding: 20px;
+                width: 200px;
+                transition: all 0.5s;
+                cursor: pointer;
+                margin: 5px;
+            }
+            .button123:focus
+            {
+                background-color: orange;
+                color:black;
+            }
+            .error
+            {
+                background-color: #ffc107;
+            }
+        .button123 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button123 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button123:hover span {
+        padding-right: 25px;
+        }
+
+        .button123:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+
+        
+        

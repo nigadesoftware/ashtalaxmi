@@ -1,0 +1,126 @@
+[
+    {
+        "Version": 1.1,
+        "TranDtls": [
+            {
+                "TaxSch": "GST",
+                "SupTyp": "B2B",
+                "IgstOnIntra": "No",
+                "RegRev": "No",
+                "EcmGstin": null
+            }
+        ],
+        "DocDtls": [
+            {
+                "Typ": "Tax Invoice",
+                "No": "SUG/2223/00196",
+                "Dt": "16/04/2022"
+            }
+        ],
+        "SellerDtls": [
+            {
+                "Gstin": "27AAXCA2984P1ZJ",
+                "LglNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+                "TrdNm": "KADWA SAHAKARI SAKHAR KARKHANA LIMITED",
+                "Addr1": "RAJARAMNAGAR, TAL - DINDORI DIST- NASHIK",
+                "Addr2": null,
+                "Loc": "Palase",
+                "Pin": 422209,
+                "Stcd": "Maharashtra",
+                "Ph": 22557237181,
+                "Em": "kadwasakar@yahoo.com"
+            }
+        ],
+        "BuyerDtls": [
+            {
+                "Gstin": "27CVPPD1710A1Z5",
+                "LglNm": " DESHMUKH BROTHERS",
+                "TrdNm": " DESHMUKH BROTHERS",
+                "Pos": "MAHARASHTRA",
+                "Addr1": "G. NO 45, AT POST JAULKEVANI, TEL- DINDORI, Nashik, Maharashtra, 422209",
+                "Addr2": "JAULKEVANI",
+                "Loc": "JAULKEVANI",
+                "Pin": 422209,
+                "Stcd": "MAHARASHTRA",
+                "Ph": null,
+                "Em": null
+            }
+        ],
+        "ShipDtls": [
+            {
+                "Gstin": "27CVPPD1710A1Z5",
+                "LglNm": " DESHMUKH BROTHERS",
+                "TrdNm": " DESHMUKH BROTHERS",
+                "Addr1": "G. NO 45, AT POST JAULKEVANI, TEL- DINDORI, Nashik, Maharashtra, 422209",
+                "Addr2": "JAULKEVANI",
+                "Loc": "JAULKEVANI",
+                "Pin": 422209,
+                "Stcd": "MAHARASHTRA"
+            }
+        ],
+        "ValDtls": [
+            {
+                "AssVal": 101460,
+                "IgstVal": 0,
+                "CgstVal": 2537,
+                "SgstVal": 2537,
+                "CesVal": 0,
+                "StCesVal": 0,
+                "Discount": 0,
+                "OthChrg": 0,
+                "RndOffAmt": 0,
+                "TotInvVal": 106533
+            }
+        ],
+        "ExpDtls": [
+            {
+                "ShipBNo": null,
+                "ShipBDt": null,
+                "Port": null,
+                "RefClm": null,
+                "ForCur": null,
+                "CntCode": null,
+                "ExpDuty": 0
+            }
+        ],
+        "EwbDtls": [
+            {
+                "TransId": "27CVPPD1710A1Z5",
+                "TransName": " DESHMUKH BROTHERS",
+                "TransMode": "Road",
+                "Distance": 5,
+                "TransDocNo": null,
+                "TransDocDt": null,
+                "VehNo": "MH04EY8875",
+                "VehType": "Regular"
+            }
+        ],
+        "ItemList": [
+            {
+                "SlNo": 1,
+                "PrdDesc": "White Sugar-M30 50Kg PP-20212022",
+                "IsServc": "N",
+                "HsnCd": 170114,
+                "Qty": 30,
+                "Unit": "QUINTAL",
+                "UnitPrice": 3382,
+                "TotAmt": 101460,
+                "Discount": 0,
+                "PreTaxVal": 0,
+                "AssAmt": 101460,
+                "GstRt": 5,
+                "IgstAmt": 0,
+                "CgstAmt": 2537,
+                "SgstAmt": 2537,
+                "CesRt": 0,
+                "CesAmt": 0,
+                "CesNonAdvlAmt": 0,
+                "StateCesRt": 0,
+                "StateCesAmt": 0,
+                "StateCesNonAdvlAmt": 0,
+                "OthChrg": 0,
+                "TotItemVal": 106533
+            }
+        ]
+    }
+]

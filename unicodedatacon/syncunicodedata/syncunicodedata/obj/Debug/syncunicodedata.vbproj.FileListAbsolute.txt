@@ -1,0 +1,42 @@
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe.config
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\bin\Debug\unicode.dll
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\bin\Debug\unicode.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.MainForm.resources
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbproj.GenerateResource.Cache
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.exe
+C:\Users\admin\Documents\SharpDevelop Projects\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.pdb
+D:\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe.config
+D:\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe
+D:\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.pdb
+D:\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\Oracle.DataAccess.dll
+D:\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\unicode.dll
+D:\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\unicode.pdb
+D:\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbprojResolveAssemblyReference.cache
+D:\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.MainForm.resources
+D:\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbproj.GenerateResource.Cache
+D:\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.exe
+D:\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.pdb
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe.config
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.pdb
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\unicode.dll
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\unicode.pdb
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.MainForm.resources
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbproj.GenerateResource.Cache
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.exe
+D:\swappcoin\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.pdb
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe.config
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.exe
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\syncunicodedata.pdb
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\Oracle.DataAccess.dll
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\unicode.dll
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\bin\Debug\unicode.pdb
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbprojResolveAssemblyReference.cache
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.MainForm.resources
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.vbproj.GenerateResource.Cache
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.exe
+D:\nigade\software\kadwa\unicodedatacon\syncunicodedata\syncunicodedata\obj\Debug\syncunicodedata.pdb

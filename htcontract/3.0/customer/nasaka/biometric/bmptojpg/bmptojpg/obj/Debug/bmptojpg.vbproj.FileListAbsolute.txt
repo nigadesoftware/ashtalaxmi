@@ -1,0 +1,6 @@
+D:\swappcoin\kadwa\htcontract\2.0\customer\kadwa\biometric\bmptojpg\bmptojpg\obj\Debug\bmptojpg.MainForm.resources
+D:\swappcoin\kadwa\htcontract\2.0\customer\kadwa\biometric\bmptojpg\bmptojpg\obj\Debug\bmptojpg.vbproj.GenerateResource.Cache
+D:\swappcoin\kadwa\htcontract\2.0\customer\kadwa\biometric\bmptojpg\bmptojpg\bin\Debug\bmptojpg.exe
+D:\swappcoin\kadwa\htcontract\2.0\customer\kadwa\biometric\bmptojpg\bmptojpg\bin\Debug\bmptojpg.pdb
+D:\swappcoin\kadwa\htcontract\2.0\customer\kadwa\biometric\bmptojpg\bmptojpg\obj\Debug\bmptojpg.exe
+D:\swappcoin\kadwa\htcontract\2.0\customer\kadwa\biometric\bmptojpg\bmptojpg\obj\Debug\bmptojpg.pdb

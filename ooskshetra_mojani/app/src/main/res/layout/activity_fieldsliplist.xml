@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fieldsliplist">
+
+    <TextView
+        android:id="@+id/txv_Sequence"
+        android:layout_width="367dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:background="#faa"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <Button
+        android:id="@+id/btnConfirmUploadTrip"
+        android:layout_width="78dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#FF9800"
+        android:text="Confirm"
+        app:layout_constraintStart_toEndOf="@+id/btnUpload"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="वाहन/गाडी खेप"
+        android:textAlignment="center"
+        android:textColor="#3C3838"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txvVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="वाहन "
+        android:textAlignment="viewStart"
+        android:textColor="#323336"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvVehicle">
+
+        <ListView
+            android:id="@+id/lsvFieldsliplist"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:background="#2A8BC34A"
+            android:divider="#8a4"
+            android:dividerHeight="2px"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:listSelector="#4a2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="341dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:text="नाशिक सहकारी साखर कारखाना लि. द्वारा अष्टलक्ष्मी शुगर इथॅनॉल अॅन्ड एनर्जी"
+        android:textAlignment="center"
+        android:textColor="#92140B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="89dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#FF9800"
+        android:text="Upload"
+        app:layout_constraintStart_toEndOf="@+id/btnValidation"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnAgriculture"
+        android:layout_width="93dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#FF9800"
+        android:text="Home"
+        app:layout_constraintStart_toEndOf="@+id/btnConfirmUploadTrip"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnValidation"
+        android:layout_width="89dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="4dp"
+        android:background="#FF9800"
+        android:text="Verify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="351dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="16dp"
+        android:text="फिल्डस्लिप थर क्रम"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+</androidx.constraintlayout.widget.ConstraintLayout>

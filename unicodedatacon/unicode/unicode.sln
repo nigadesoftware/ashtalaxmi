@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "unicode", "unicode\unicode.vbproj", "{A8ECC2FB-8E18-4F71-BD6B-95E62E0532ED}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "unicodeconverter", "unicodeconverter\unicodeconverter.vbproj", "{EEF7E4A8-78E5-49D1-A619-02A3473DEC17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A8ECC2FB-8E18-4F71-BD6B-95E62E0532ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8ECC2FB-8E18-4F71-BD6B-95E62E0532ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8ECC2FB-8E18-4F71-BD6B-95E62E0532ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8ECC2FB-8E18-4F71-BD6B-95E62E0532ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF7E4A8-78E5-49D1-A619-02A3473DEC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF7E4A8-78E5-49D1-A619-02A3473DEC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF7E4A8-78E5-49D1-A619-02A3473DEC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF7E4A8-78E5-49D1-A619-02A3473DEC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

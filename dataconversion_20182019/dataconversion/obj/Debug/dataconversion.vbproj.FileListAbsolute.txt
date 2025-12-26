@@ -1,0 +1,33 @@
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.MainForm.resources
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.vbproj.GenerateResource.Cache
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\bin\Debug\dataconversion.exe
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\bin\Debug\dataconversion.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\bin\Debug\unicode.dll
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\bin\Debug\unicode.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.exe
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.voucherheader.resources
+C:\Users\admin\Documents\SharpDevelop Projects\dataconversion\dataconversion\obj\Debug\dataconversion.voucherdetail.resources
+D:\swappcoin\kadwa\dataconversion\dataconversion\bin\Debug\dataconversion.exe
+D:\swappcoin\kadwa\dataconversion\dataconversion\bin\Debug\dataconversion.pdb
+D:\swappcoin\kadwa\dataconversion\dataconversion\bin\Debug\unicode.dll
+D:\swappcoin\kadwa\dataconversion\dataconversion\bin\Debug\unicode.pdb
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.MainForm.resources
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.voucherdetail.resources
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.voucherheader.resources
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.vbproj.GenerateResource.Cache
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.exe
+D:\swappcoin\kadwa\dataconversion\dataconversion\obj\Debug\dataconversion.pdb
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\bin\Debug\dataconversion.exe
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\bin\Debug\dataconversion.pdb
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\bin\Debug\unicode.dll
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\bin\Debug\unicode.pdb
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.MainForm.resources
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.voucherdetail.resources
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.voucherheader.resources
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.vbproj.GenerateResource.Cache
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.exe
+D:\swappcoin\kadwa\dataconversion_20182019\dataconversion\obj\Debug\dataconversion.pdb

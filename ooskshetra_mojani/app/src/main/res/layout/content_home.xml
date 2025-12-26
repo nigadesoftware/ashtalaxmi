@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".home"
+    tools:showIn="@layout/activity_home">
+
+    <Button
+        android:id="@+id/btnAgriculture"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFC107"
+        android:text="बाहेर पडणे (Logout)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFieldslip" />
+
+    <Button
+        android:id="@+id/btnFieldslip"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFC107"
+        android:text="ऊसतोड चिट्टी (Field Slip)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMeasurement" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:text=" श्री संत जनार्दन स्वामी नगर, ता. जि. नाशिक"
+        android:textAlignment="center"
+        android:textColor="#131212"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/nigadesoftwaretechnologies_logo" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="157dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:text="App By "
+        android:textAlignment="textStart"
+        android:textColor="#0F0F0F"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAgriculture" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="384dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:text="Software Technologies (opc) Private Limited"
+        android:textAlignment="textStart"
+        android:textColor="#0D0D0E"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="नाशिक सहकारी साखर कारखाना लि."
+        android:textAlignment="center"
+        android:textColor="#92140B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMeasurement"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFC107"
+        android:text="ऊस क्षेत्र मोजणी (Measure)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        app:srcCompat="@drawable/nigadesoftwaretechnologies_logo_3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kadwalogo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

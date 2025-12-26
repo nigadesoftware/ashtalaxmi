@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fieldslipMainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="तोडस्लीप/खेप"
+        android:textAlignment="center"
+        android:textColor="#3C3838"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="फिल्डस्लीप शिल्लक राहिलेल्या गटांची तोडस्लीप यादी"
+        android:textAlignment="viewStart"
+        android:textColor="#323336"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="406dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ListView
+            android:id="@+id/lsvTodsliplist"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:background="#2A8BC34A"
+            android:divider="#8a4"
+            android:dividerHeight="2px"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="false"
+            android:listSelector="#4a2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="356dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:text="नाशिक सहकारी साखर कारखाना लि. द्वारा अष्टलक्ष्मी शुगर इथॅनॉल अॅन्ड एनर्जी"
+        android:textAlignment="center"
+        android:textColor="#92140B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="12dp"
+        android:text="वाहन/गाडी खेप यादी"
+        android:textColor="#2E2E30"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="406dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+        <ListView
+            android:id="@+id/lsvTriplist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#37FF9800" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#FF9800"
+        android:text="Download"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/btnAgriculture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="#FF9800"
+        android:text="Home"
+        app:layout_constraintStart_toEndOf="@+id/btnDownload"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+C:\Users\admin\Documents\SharpDevelop Projects\unicode\unicode\bin\Debug\unicode.dll
+C:\Users\admin\Documents\SharpDevelop Projects\unicode\unicode\bin\Debug\unicode.pdb
+C:\Users\admin\Documents\SharpDevelop Projects\unicode\unicode\obj\Debug\unicode.vbprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\SharpDevelop Projects\unicode\unicode\obj\Debug\unicode.dll
+C:\Users\admin\Documents\SharpDevelop Projects\unicode\unicode\obj\Debug\unicode.pdb
+D:\swappcoin\kadwa\unicodedatacon\unicode\unicode\bin\Debug\unicode.dll
+D:\swappcoin\kadwa\unicodedatacon\unicode\unicode\bin\Debug\unicode.pdb
+D:\swappcoin\kadwa\unicodedatacon\unicode\unicode\obj\Debug\unicode.vbprojResolveAssemblyReference.cache
+D:\swappcoin\kadwa\unicodedatacon\unicode\unicode\obj\Debug\unicode.dll
+D:\swappcoin\kadwa\unicodedatacon\unicode\unicode\obj\Debug\unicode.pdb

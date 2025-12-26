@@ -1,0 +1,22 @@
+create or replace view vw_record_update_status as
+select sum(farcount) as farcount, sum(seccount) as seccount, sum(villcount) as villcount,sum(soccount) as soccount,sum(branchcount) as branchcount
+from (
+select count(*) as farcount, 0 as seccount, 0 as villcount, 0 as soccount, 0 as branchcount from com_farmer_master@sugarerplink t
+union all
+select count(*)*-1 as farcount, 0 as seccount, 0 as villcount, 0 as soccount, 0 as branchcount from com_farmer_master t
+union all
+select 0 as farcount,count(*) as seccount, 0 as villcount, 0 as soccount, 0 as branchcount from com_section_master@sugarerplink t
+union all
+select 0 as farcount,count(*)*-1 as seccount, 0 as villcount, 0 as soccount, 0 as branchcount from com_section_master t
+union all
+select 0 as farcount,0 as seccount,count(*) as villcount, 0 as soccount, 0 as branchcount from com_village_master@sugarerplink t
+union all
+select 0 as farcount,0 as seccount,count(*)*-1 as villcount, 0 as soccount, 0 as branchcount from com_village_master t
+union all
+select 0 as farcount,0 as seccount,0 as villcount,count(*) as soccount, 0 as branchcount from cab_society_master@sugarerplink t
+union all
+select 0 as farcount,0 as seccount,0 as villcount,count(*)*-1 as soccount, 0 as branchcount from cab_society_master t
+union all
+select 0 as farcount,0 as seccount,0 as villcount,0 as soccount,count(*) as branchcount from com_bank_branch_master@sugarerplink t
+union all
+select 0 as farcount,0 as seccount,0 as villcount,0 as soccount,count(*)*-1 as branchcount from com_bank_branch_master t);
