@@ -43,7 +43,7 @@ class farmertonnage extends reportbox
         $this->pdf->setFooterFont(Array($headerfontname, '', 12));
        // $title = str_pad(' ', 30).'Rajaramnagar, Tal - Dindori Dist - Nashik';
     	//$this->pdf->SetHeaderData('', 0,str_pad(' ', 21).'Kadwa S.S.K. Ltd.' ,$title);
-	// set margins
+	  // set margins
         $this->pdf->SetMargins(PDF_MARGIN_LEFT, PDF_MARGIN_TOP, PDF_MARGIN_RIGHT);
         $this->pdf->SetHeaderMargin(PDF_MARGIN_HEADER);
         $this->pdf->SetFooterMargin(PDF_MARGIN_FOOTER);
