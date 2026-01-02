@@ -37,6 +37,10 @@
     {
         $htrtgs1->export($_POST['billperiodtransnumber'],4);
     }
+    elseif ($_POST['exportcsvfile']=='5')
+    {
+        $htrtgs1->export($_POST['billperiodtransnumber'],5);
+    }
     else
     {
         $htrtgs1->startreport();

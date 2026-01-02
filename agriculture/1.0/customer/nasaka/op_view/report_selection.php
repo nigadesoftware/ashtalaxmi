@@ -324,6 +324,7 @@
                     echo '<td><input type="checkbox" id="exportcsvfile" name="exportcsvfile" value="2">Export Below2lac CSV File</td>';
                     echo '<td><input type="checkbox" id="exportcsvfile" name="exportcsvfile" value="3">Export Above2lac CSV File</td>';
                     echo '<td><input type="checkbox" id="exportcsvfile" name="exportcsvfile" value="4">Export All CSV File New Type</td>';
+                    echo '<td><input type="checkbox" id="exportcsvfile" name="exportcsvfile" value="5">Export All CSV File New Format</td>';
                     echo '</tr>';
                     echo '<tr>';
                 }

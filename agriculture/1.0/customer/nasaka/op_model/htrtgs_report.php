@@ -413,71 +413,142 @@ class htrtgs extends reportbox
             $cond = "h.servicetrhrcategorycode not in (1,13)";
         }
         
-        if ($paymentcategorycode==1)
-        $cond1 = "paymentcategorycode>=1";
+        if ($paymentcategorycode!=5)
+        {
+            if ($paymentcategorycode==1)
+            $cond1 = "paymentcategorycode>=1";
+            else
+            $cond1 = "paymentcategorycode=".$paymentcategorycode;
+            
+            $query = "select * from (
+                select  case when sum(netamount)<200000 then 2
+                        when sum(netamount)>=200000 then 3 
+                        end paymentcategorycode
+                        ,bankcode
+                        ,bankbranchcode
+                        ,banknameeng
+                        ,bankbranchnameeng
+                        ,paymentdate
+                        ,contractorcode
+                        ,contractorcode code
+                        ,'Rajaramnagar ' villagenameeng
+                        ,contractornameeng
+                        ,sum(netamount) netamount
+                        ,accountnumber
+                        ,mobilenumber
+                        ,ifsc
+                        from (
+                        select
+                        c.bankcode
+                        ,t.bankbranchcode
+                        ,c.banknameeng
+                        ,b.bankbranchnameeng
+                        ,t.transactionnumber
+                        ,t.billnumber
+                        ,to_char(h.paymentdate,'dd/MM/yyyy') paymentdate
+                        ,f.contractorcode
+                        ,f.contractornameeng
+                        ,t.netamount
+                        ,t.accountnumber
+                        ,f.mobilenumber
+                        ,b.ifsc
+                        from htbillheader t,contractorwithadhikarpatra f
+                        ,billperiodheader h,bankbranch b, bank c,Bankcategory r
+                        where t.contractorcode=f.contractorcode
+                        --and h.seasonyear=f.seasoncode
+                        and t.billperiodtransnumber=h.billperiodtransnumber
+                        and c.bankcategorycode=r.bankcategorycode
+                        and b.bankcode=c.bankcode
+                        and t.bankbranchcode=b.bankbranchcode(+)
+                        and nvl(t.netamount,0)>0
+                        and t.bankbranchcode<>113
+                        and h.seasonyear=".$this->seasoncode." 
+                        and h.billcategorycode=".$this->billcategorycode." 
+                        and h.billperiodnumber=".$this->billperiodnumber." 
+                        and {$cond} 
+                        )t  
+                        group by bankcode
+                        ,bankbranchcode
+                        ,banknameeng
+                        ,bankbranchnameeng
+                        ,paymentdate
+                        ,contractorcode
+                        ,contractornameeng
+                        ,accountnumber
+                        ,mobilenumber
+                        ,ifsc) 
+                        where {$cond1}
+                        order by paymentcategorycode,bankcode,bankbranchcode,contractornameeng
+                        ,accountnumber";
+        }
         else
-        $cond1 = "paymentcategorycode=".$paymentcategorycode;
-        
-        $query = "select * from (
-            select  case when sum(netamount)<200000 then 2
-                    when sum(netamount)>=200000 then 3 
-                     end paymentcategorycode
-                    ,bankcode
-                    ,bankbranchcode
-                    ,banknameeng
-                    ,bankbranchnameeng
-                    ,paymentdate
-                    ,contractorcode
-                    ,contractorcode code
-                    ,'Rajaramnagar ' villagenameeng
-                    ,contractornameeng
-                    ,sum(netamount) netamount
-                    ,accountnumber
-                    ,mobilenumber
-                    ,ifsc
-                    from (
-                    select
-                    c.bankcode
-                    ,t.bankbranchcode
-                    ,c.banknameeng
-                    ,b.bankbranchnameeng
-                    ,t.transactionnumber
-                    ,t.billnumber
-                    ,to_char(h.paymentdate,'dd/MM/yyyy') paymentdate
-                    ,f.contractorcode
-                    ,f.contractornameeng
-                    ,t.netamount
-                    ,t.accountnumber
-                    ,f.mobilenumber
-                    ,b.ifsc
-                    from htbillheader t,contractorwithadhikarpatra f
-                    ,billperiodheader h,bankbranch b, bank c,Bankcategory r
-                    where t.contractorcode=f.contractorcode
-                    --and h.seasonyear=f.seasoncode
-                    and t.billperiodtransnumber=h.billperiodtransnumber
-                    and c.bankcategorycode=r.bankcategorycode
-                    and b.bankcode=c.bankcode
-                    and t.bankbranchcode=b.bankbranchcode(+)
-                    and nvl(t.netamount,0)>0
-                    and t.bankbranchcode<>113
-                    and h.seasonyear=".$this->seasoncode." 
-                    and h.billcategorycode=".$this->billcategorycode." 
-                    and h.billperiodnumber=".$this->billperiodnumber." 
-                    and {$cond} 
-                    )t  
-                    group by bankcode
-                    ,bankbranchcode
-                    ,banknameeng
-                    ,bankbranchnameeng
-                    ,paymentdate
-                    ,contractorcode
-                    ,contractornameeng
-                    ,accountnumber
-                    ,mobilenumber
-                    ,ifsc) 
-                    where {$cond1}
-                    order by paymentcategorycode,bankcode,bankbranchcode,contractornameeng
-                    ,accountnumber";
+        {
+            if ($paymentcategorycode==1)
+            $cond1 = "paymentcategorycode>=1";
+            else
+            $cond1 = "paymentcategorycode=".$paymentcategorycode;
+            
+            $query = "select * from (
+                select  case when sum(netamount)<200000 then 2
+                        when sum(netamount)>=200000 then 3 
+                        end paymentcategorycode
+                        ,bankcode
+                        ,bankbranchcode
+                        ,banknameeng
+                        ,bankbranchnameeng
+                        ,paymentdate
+                        ,contractorcode
+                        ,contractorcode code
+                        ,'Rajaramnagar ' villagenameeng
+                        ,contractornameeng
+                        ,sum(netamount) netamount
+                        ,accountnumber
+                        ,mobilenumber
+                        ,ifsc
+                        from (
+                        select
+                        c.bankcode
+                        ,t.bankbranchcode
+                        ,c.banknameeng
+                        ,b.bankbranchnameeng
+                        ,t.transactionnumber
+                        ,t.billnumber
+                        ,to_char(h.paymentdate,'dd/MM/yyyy') paymentdate
+                        ,f.contractorcode
+                        ,f.contractornameeng
+                        ,t.netamount
+                        ,t.accountnumber
+                        ,f.mobilenumber
+                        ,b.ifsc
+                        from htbillheader t,contractorwithadhikarpatra f
+                        ,billperiodheader h,bankbranch b, bank c,Bankcategory r
+                        where t.contractorcode=f.contractorcode
+                        --and h.seasonyear=f.seasoncode
+                        and t.billperiodtransnumber=h.billperiodtransnumber
+                        and c.bankcategorycode=r.bankcategorycode
+                        and b.bankcode=c.bankcode
+                        and t.bankbranchcode=b.bankbranchcode(+)
+                        and nvl(t.netamount,0)>0
+                        and t.bankbranchcode<>113
+                        and h.seasonyear=".$this->seasoncode." 
+                        and h.billcategorycode=".$this->billcategorycode." 
+                        and h.billperiodnumber=".$this->billperiodnumber." 
+                        and {$cond} 
+                        )t  
+                        group by bankcode
+                        ,bankbranchcode
+                        ,banknameeng
+                        ,bankbranchnameeng
+                        ,paymentdate
+                        ,contractorcode
+                        ,contractornameeng
+                        ,accountnumber
+                        ,mobilenumber
+                        ,ifsc) 
+                       -- where {$cond1}
+                        order by paymentcategorycode,bankcode,bankbranchcode,contractornameeng
+                        ,accountnumber";
+        }
            $result = oci_parse($this->connection, $query);
            $r = oci_execute($result);
            $response = array();
@@ -489,6 +560,8 @@ class htrtgs extends reportbox
            $filename='contractorrtgs_below2lac.csv';
            elseif ($paymentcategorycode==4)
            $filename='contractorrtgs_above5lac.csv';
+           elseif ($paymentcategorycode==5)
+           $filename='contractorrtgs_above5lac.csv';
            //$fp1 = fopen('../../../../../../exportb2b/'.$name.'.csv', 'w');
            $fp1=fopen('php://memory', 'w');
            /* fputcsv($fp1, array('NEFT','Debit A/c','Amount','Name of Beneficiery','Type A/c','Address','Account No','IFSC Code','Mobile No.','Name of Bank','Code No.','Village'));
@@ -498,7 +571,8 @@ class htrtgs extends reportbox
                 fputcsv($fp1, array('NEFT','4812021567',$row['NETAMOUNT'],$row['CONTRACTORNAMEENG'],'Saving','KSSK',$acno,$row['IFSC'],$row['MOBILENUMBER'],$row['BANKNAMEENG'].', '.$row['BANKBRANCHNAMEENG'],$row['CODE'],$row['VILLAGENAMEENG']), $delimiter = ',', $enclosure = '"');
            } */
 
-
+           if ($paymentcategorycode!=5)
+           {
            fputcsv($fp1, array('Beneficiary Bank IFSC Code','','','CBS Branch Code','GL Code','Ordering Customer Account No with Branch','Beneficiary Customer Account No','Beneficiary Account Holder Name','Beneficary Details','Beneficary Details','Beneficiary Bank Name','Beneficiary Bank Branch Name','Beneficiary Bank Branch Address Details in brief','Ordering Customer Mobile No MANDATORY','Ordering Customer Name'));
            fputcsv($fp1, array('IFSCCODE','AMT WITH Decimal','','BRCD','PRD','ACNO','BENDESC1','BENDESC2','3','4','ORDDESC3','ORDDESC4','EXTRA','MOBILEEMAI','ORDDESC2'));
            while ($row = oci_fetch_array($result,OCI_ASSOC+OCI_RETURN_NULLS))
@@ -508,6 +582,19 @@ class htrtgs extends reportbox
                 $brcode="'0040";
                 fputcsv($fp1, array($row['IFSC'],number_format_indian($row['NETAMOUNT'],2),'',$brcode,'',$accode,$acno,$row['CONTRACTORNAMEENG'],'','',$row['BANKNAMEENG'],$row['BANKBRANCHNAMEENG'],'','8208026346','Ashtalaxmi Sugar Ethanol and Energy Nasikroad'), $delimiter = ',', $enclosure = '"');
            }
+        }
+        else
+        {
+            
+           fputcsv($fp1, array('Account Number','Amount','Perticular','IFSC Code','Beneficiary Customer Account No','Beneficiary Account Holder Name','Beneficiary Bank Name','Beneficiary Bank Branch Name','Beneficiary Bank Branch Address Details in brief'));
+            while ($row = oci_fetch_array($result,OCI_ASSOC+OCI_RETURN_NULLS))
+           {
+                $acno="'".$row['ACCOUNTNUMBER'];
+                $accode="'0849202100000813";
+                $brcode="'0040";
+                fputcsv($fp1, array($accode,number_format_indian($row['NETAMOUNT'],2),'H&T Payment',$row['IFSC'],$acno,$row['CONTRACTORNAMEENG'],$row['BANKNAMEENG'],$row['BANKBRANCHNAMEENG'],'Ashtalaxmi Sugar Ethanol and Energy Nasikroad'), $delimiter = ',', $enclosure = '"');
+           }
+        }
 
            // reset the file pointer to the start of the file
             fseek($fp1, 0);
