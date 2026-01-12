@@ -79,7 +79,7 @@ class tonnagesmry extends reportbox
     function startreport()
     {
         $this->groupfield1='WT';
-        $this->groupfield2='KOYATE_WT';
+        $this->groupfield2='AREA';
        
         $this->resetgroupsummary(0);
       
@@ -128,7 +128,7 @@ class tonnagesmry extends reportbox
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w); 
 
         $this->setfieldwidth(25);
-        $this->textbox('App. Koyate',$this->w,$this->x,'S','C',1,'verdana',10,'','','','');
+        $this->textbox('Area',$this->w,$this->x,'S','C',1,'verdana',10,'','','','');
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w); 
 
         $this->setfieldwidth(25);
@@ -172,10 +172,19 @@ class tonnagesmry extends reportbox
         }
         
         $group_query_1 =
-         " select cc.circlecode,c.hodcode,h.hodnameeng,cc.circlenameeng
-         ,t.CONTRACTORCODE,t.CONTRACTORNAMEENG 
-          ,row_number() over (partition by cc.circlecode,c.hodcode order by t.CONTRACTORCODE) srnumber            
-          ,sum(t.transportationtonnage) wt,round(sum(t.transportationtonnage)/2,0) koyate_wt
+         "  select circlecode,hodcode,hodnameeng,circlenameeng
+         ,CONTRACTORCODE,CONTRACTORNAMEENG
+         ,row_number() over (partition by circlecode,hodcode order by CONTRACTORCODE) srnumber
+         ,wt,area
+ from (        
+ select circlecode,hodcode,hodnameeng,circlenameeng
+         ,CONTRACTORCODE,CONTRACTORNAMEENG
+         ,sum(wt) wt,sum(area) area
+from (         
+ select cc.circlecode,c.hodcode,h.hodnameeng,cc.circlenameeng
+         ,t.CONTRACTORCODE,t.CONTRACTORNAMEENG,null plotnumber 
+          --,row_number() over (partition by cc.circlecode,c.hodcode order by t.CONTRACTORCODE) srnumber            
+          ,sum(t.transportationtonnage) wt, 0 area
           from HT_TONNAGE_mm t,contractor c
           ,hodcode h,village v,circle cc
            where {$cond} and
@@ -184,9 +193,31 @@ class tonnagesmry extends reportbox
           and t.villagecode=v.villagecode
           and v.circlecode=cc.circlecode
           group by c.hodcode,h.hodnameeng,cc.circlecode,cc.circlenameeng
-          ,t.CONTRACTORCODE,t.CONTRACTORNAMEENG            
-          order by cc.circlecode,c.hodcode,t.CONTRACTORCODE
+          ,t.CONTRACTORCODE,t.CONTRACTORNAMEENG
+ union all
+  select cc.circlecode,c.hodcode,h.hodnameeng,cc.circlenameeng
+         ,t.CONTRACTORCODE,t.CONTRACTORNAMEENG,ph.plotnumber 
+          --,row_number() over (partition by cc.circlecode,c.hodcode order by t.CONTRACTORCODE) srnumber            
+          ,0 wt,max(ph.area) area
+          from HT_TONNAGE_mm t,contractor c
+          ,hodcode h,village v,circle cc,plantationheader ph
+           where {$cond} and
+          t.CONTRACTORCODE=c.contractorcode 
+          and c.hodcode=h.hodcode
+          and t.villagecode=v.villagecode
+          and v.circlecode=cc.circlecode
+          and t.SEASONCODE=ph.seasoncode
+          and t.plotnumber=ph.plotnumber
+          group by cc.circlecode,c.hodcode,h.hodnameeng,cc.circlenameeng
+         ,t.CONTRACTORCODE,t.CONTRACTORNAMEENG,ph.plotnumber
+         )
+  group by circlecode,hodcode,hodnameeng,circlenameeng
+         ,CONTRACTORCODE,CONTRACTORNAMEENG        
+         )           
+          order by circlecode,hodcode,CONTRACTORCODE
+          
          
+           
            ";   
         
         $group_result_1 = oci_parse($this->connection, $group_query_1);
@@ -266,7 +297,20 @@ class tonnagesmry extends reportbox
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
         $this->setfieldwidth(25);
-        $this->textbox($group_row_1['KOYATE_WT'],$this->w,$this->x,'N','R',1,'SakalMarathiNormal922',10,'','','','');
+        $koyateWt = $group_row_1['AREA'];
+        $koyateWt = is_numeric($koyateWt) ? $koyateWt : 0;
+
+        $this->textbox(
+            number_format($koyateWt, 2, '.', ''), // ✅ forces 0.25
+            $this->w,
+            $this->x,
+            'S',
+            'R',
+            1,
+            'SakalMarathiNormal922',
+            9
+        );
+        //$this->textbox($group_row_1['AREA'],$this->w,$this->x,'N','R',1,'SakalMarathiNormal922',10,'','','','');
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
         
         $this->setfieldwidth(25);        
@@ -315,7 +359,20 @@ class tonnagesmry extends reportbox
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
         $this->setfieldwidth(25);
-        $this->textbox($this->numformat($this->showgroupsummary(1,'KOYATE_WT'),0),$this->w,$this->x,'S','R',1,'SakalMarathiNormal922',9);
+        $koyateWt = $this->showgroupsummary(1, 'AREA');
+        $koyateWt = is_numeric($koyateWt) ? $koyateWt : 0;
+
+        $this->textbox(
+            number_format($koyateWt, 2, '.', ''), // ✅ forces 0.25
+            $this->w,
+            $this->x,
+            'S',
+            'R',
+            1,
+            'SakalMarathiNormal922',
+            9
+        );
+        //$this->textbox($this->numformat($this->showgroupsummary(1,'KOYATE_WT'),0),$this->w,$this->x,'S','R',1,'SakalMarathiNormal922',9);
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
        
@@ -349,7 +406,20 @@ class tonnagesmry extends reportbox
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
         $this->setfieldwidth(25);
-        $this->textbox($this->numformat($this->showgroupsummary(2,'KOYATE_WT'),0),$this->w,$this->x,'S','R',1,'SakalMarathiNormal922',9);
+        $koyateWt = $this->showgroupsummary(2, 'AREA');
+        $koyateWt = is_numeric($koyateWt) ? $koyateWt : 0;
+
+        $this->textbox(
+            number_format($koyateWt, 2, '.', ''), // ✅ forces 0.25
+            $this->w,
+            $this->x,
+            'S',
+            'R',
+            1,
+            'SakalMarathiNormal922',
+            9
+        );
+        //$this->textbox($this->numformat($this->showgroupsummary(2,'AREA'),0),$this->w,$this->x,'S','R',1,'SakalMarathiNormal922',9);
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
        
@@ -408,7 +478,20 @@ class tonnagesmry extends reportbox
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
         $this->setfieldwidth(25);
-        $this->textbox($this->numformat($this->showgroupsummary(0,'KOYATE_WT'),0),$this->w,$this->x,'S','R',1,'SakalMarathiNormal922',9);
+        $koyateWt = $this->showgroupsummary(0, 'AREA');
+        $koyateWt = is_numeric($koyateWt) ? $koyateWt : 0;
+
+        $this->textbox(
+            number_format($koyateWt, 2, '.', ''), // ✅ forces 0.25
+            $this->w,
+            $this->x,
+            'S',
+            'R',
+            1,
+            'SakalMarathiNormal922',
+            9
+        );
+        //$this->textbox($this->numformat($this->showgroupsummary(0,'KOYATE_WT'),2),$this->w,$this->x,'S','R',1,'SakalMarathiNormal922',9);
         $this->vline($this->liney,$this->liney+7,$this->x+$this->w);
 
         $this->setfieldwidth(25);        

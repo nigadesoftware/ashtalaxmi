@@ -357,8 +357,8 @@ class pumpdieseltransaction extends swappform
                 $this->saleamount = $row['SALEAMOUNT'];
                 $this->contractorvehiclecode = $row['CONTRACTORVEHICLECODE'];
                 $this->pumpcodetextcombo = $this->textcomboname($connection=$this->connection,$table='PUMP',$datafield='PUMPCODE',$datafieldvalue=$row['PUMPCODE'],$engfield='PUMPNAMEENG',$unicodefield='PUMPNAMEUNI');
-                $this->vehiclecodetextcombo = $this->textcomboname($connection=$this->connection,$table='VEHICLE',$datafield='VEHICLECODE',$datafieldvalue=$row['VEHICLECODE'],$engfield='VEHICLENUMBER',$unicodefield='VEHICLENUMBER');
-                $this->subcontractorcodetextcombo = $this->textcomboname($connection=$this->connection,$table='SUBCONTRACTOR',$datafield='SUBCONTRACTORCODE',$datafieldvalue=$row['SUBCONTRACTORCODE'],$engfield='SUBCONTRACTORNAMEENG',$unicodefield='SUBCONTRACTORNAMEUNI');
+                $this->vehiclecodetextcombo = $this->textcomboname($connection=$this->connection,$table='VEHICLE',$datafield='VEHICLECODE',$datafieldvalue=$row['VEHICLECODE'],$engfield='VEHICLENUMBER',$unicodefield='VEHICLENUMBER',$cond='seasoncode='.$_SESSION['yearperiodcode']);
+                $this->subcontractorcodetextcombo = $this->textcomboname($connection=$this->connection,$table='SUBCONTRACTOR',$datafield='SUBCONTRACTORCODE',$datafieldvalue=$row['SUBCONTRACTORCODE'],$engfield='SUBCONTRACTORNAMEENG',$unicodefield='SUBCONTRACTORNAMEUNI',$cond='seasoncode='.$_SESSION['yearperiodcode']);
                 $this->contractorvehiclecodetextcombo = $this->textcomboname($connection=$this->connection,$table='OTHERCONTRACTOR',$datafield='CONTRACTORCODE',$datafieldvalue=$row['CONTRACTORVEHICLECODE'],$engfield='CONTRACTORNAMEENG',$unicodefield='CONTRACTORNAMEUNI');
                 $this->found=true;
                 return true;
