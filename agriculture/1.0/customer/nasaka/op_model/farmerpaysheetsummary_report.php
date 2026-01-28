@@ -216,7 +216,7 @@ class farmerpaysheetsummary extends swappreport
         if ($groupfooter_row_1 = oci_fetch_array($groupfooter_result_1,OCI_ASSOC+OCI_RETURN_NULLS))  
         {
             $this->setfieldwidth(40,10);
-            $this->textbox($this->circlename,$this->w,$this->x,'S','L',1,'siddhanta',11,'','','','B');
+            $this->textbox($this->circlename,$this->w,$this->x,'N','L',1,'siddhanta',11,'','','','B');
             //$this->newrow();
             $this->setfieldwidth(25);
             $this->textbox(number_format($groupfooter_row_1['CNT'],0),$this->w,$this->x,'N','R',1,'SakalMarathiNormal922',11,'','','','');
