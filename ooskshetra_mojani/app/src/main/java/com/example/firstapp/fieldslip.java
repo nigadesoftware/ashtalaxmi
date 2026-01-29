@@ -448,7 +448,7 @@ public class fieldslip extends AppCompatActivity {
         final Integer tsnumber;
         sccode=seasoncode;
         tsnumber=todslipnumber;
-        URLline = "http://206.84.230.83/webservice/controller/todslipRestController.php?view=upload&slipboyuserid="+Long.toString(Global.uid);
+        URLline = Global.staticip + "/webservice/controller/todslipRestController.php?view=upload&slipboyuserid="+Long.toString(Global.uid);
         Log.d("getxxx",URLline);
         JSONArray postparams = new JSONArray();
         mydb= new dbHelper(this);
