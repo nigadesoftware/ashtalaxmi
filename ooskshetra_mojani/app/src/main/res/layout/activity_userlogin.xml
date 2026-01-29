@@ -13,7 +13,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginLeft="80dp"
         android:layout_marginTop="5dp"
-        android:text="पो.टिकेकरवाडी,ता.उ.सोलापूर,जि. सोलापूर"
+        android:text="श्रीसंत जनार्दन स्वामी नगर, ता. जि. नाशिक"
         android:textAlignment="center"
         android:textColor="#131212"
         android:textSize="12sp"
@@ -103,7 +103,7 @@
         android:layout_width="220dp"
         android:layout_height="53dp"
         android:layout_marginTop="28dp"
-        android:text=" कुमठे "
+        android:text="अष्टलक्ष्मी शुगर्स इथेनॉल अँड एनर्जी लि.,"
         android:textAlignment="center"
         android:textColor="#92140B"
         android:textSize="20sp"
@@ -162,13 +162,12 @@
         android:id="@+id/imageView6"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="24dp"
         android:layout_gravity="left"
+        android:layout_marginStart="4dp"
         android:layout_marginLeft="7dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kadwalogo"/>
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/txvWebsitelink1"
         android:layout_width="wrap_content"
@@ -188,7 +187,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:text="www.siddheshwarsugars.com"
+        android:text="www.ashtalaxmisugars.com"
         android:textColor="#2196F3"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -236,7 +235,6 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/appasaheb" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
