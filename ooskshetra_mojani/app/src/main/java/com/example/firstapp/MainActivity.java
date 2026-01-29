@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         /*HyperLink = (TextView)findViewById(R.id.txvWebsite);
-        Text = Html.fromHtml("<a href='http://206.84.230.83/'>Plot Selection for Measurement</a>");
+        Text = Html.fromHtml("<a href='http://103.141.52.10/'>Plot Selection for Measurement</a>");
         HyperLink.setMovementMethod(LinkMovementMethod.getInstance());
         HyperLink.setText(Text);*/
         mydb = new dbHelper(this);
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity
     private void getVolley()
     {
 
-        URLline ="http://206.84.230.83/webservice/controller/plotformeasurementRestController.php?view=download&measurementuserid="+Long.toString(Global.uid);
+        URLline =Global.staticip + "/webservice/controller/plotformeasurementRestController.php?view=download&measurementuserid="+Long.toString(Global.uid);
         Log.d("getxxx",URLline);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URLline,

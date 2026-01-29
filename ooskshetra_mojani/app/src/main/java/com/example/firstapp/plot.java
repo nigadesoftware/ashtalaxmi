@@ -326,7 +326,7 @@ public class plot extends AppCompatActivity {
 
 
         //URLline = Global.staticip + "/webservice/controller/plotmeasuredRestController.php?view=upload&measurementuserid="+Long.toString(Global.uid);
-        URLline = "http://206.84.230.83:80/webservice/controller/plotmeasuredRestController.php?view=upload&measurementuserid="+Long.toString(Global.uid);
+        URLline = Global.staticip + "/webservice/controller/plotmeasuredRestController.php?view=upload&measurementuserid="+Long.toString(Global.uid);
         Log.d("getxxx",URLline);
         JSONArray postparams = new JSONArray();
         mydb= new dbHelper(this);
@@ -480,7 +480,7 @@ public class plot extends AppCompatActivity {
     {
         Intent myIntent = getIntent();
         mydb= new dbHelper(this);
-        URLline = "http://206.84.230.83/webservice/controller/plotformeasurementRestController.php?view=uploadcount&seasoncode=" + myIntent.getStringExtra("seasonyear").toString() + "&plotnumber=" + myIntent.getStringExtra("plotnumber").toString() + "&measurementuserid="+Long.toString(Global.uid);
+        URLline = Global.staticip + "/webservice/controller/plotformeasurementRestController.php?view=uploadcount&seasoncode=" + myIntent.getStringExtra("seasonyear").toString() + "&plotnumber=" + myIntent.getStringExtra("plotnumber").toString() + "&measurementuserid="+Long.toString(Global.uid);
         Log.d("getxxx",URLline);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URLline,

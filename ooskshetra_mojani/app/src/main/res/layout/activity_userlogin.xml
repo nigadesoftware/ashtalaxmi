@@ -10,13 +10,13 @@
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="36dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginLeft="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="5dp"
-        android:text=" श्री संत जनार्दन स्वामी नगर, ता. जि. नाशिक"
+        android:text="पो.टिकेकरवाडी,ता.उ.सोलापूर,जि. सोलापूर"
         android:textAlignment="center"
         android:textColor="#131212"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -100,18 +100,14 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="292dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="220dp"
+        android:layout_height="53dp"
         android:layout_marginTop="28dp"
-        android:layout_marginBottom="5dp"
-        android:text="नाशिक सहकारी साखर कारखाना लि. द्वारा अष्टलक्ष्मी शुगर इथॅनॉल अॅन्ड एनर्जी"
+        android:text=" कुमठे "
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="#92140B"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView22"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -164,8 +160,8 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="24dp"
         android:layout_gravity="left"
@@ -173,7 +169,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/kadwalogo"/>
-
     <TextView
         android:id="@+id/txvWebsitelink1"
         android:layout_width="wrap_content"
@@ -193,7 +188,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
-        android:text="www.swapp.co.in"
+        android:text="www.siddheshwarsugars.com"
         android:textColor="#2196F3"
         android:textSize="14sp"
         android:textStyle="bold"
@@ -232,5 +227,16 @@
         android:text="1"
         app:layout_constraintStart_toEndOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appasaheb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

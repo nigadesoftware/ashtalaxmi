@@ -94,7 +94,7 @@ public class fieldslipMainActivity extends AppCompatActivity {
     private void getVolley()
     {
 
-        URLline = "http://206.84.230.83/webservice/controller/todslipforfieldslipRestController.php?view=download&slipboyuserid="+Long.toString(Global.uid);
+        URLline = Global.staticip + "/webservice/controller/todslipforfieldslipRestController.php?view=download&slipboyuserid="+Long.toString(Global.uid);
         Log.d("getxxx",URLline);
 
         StringRequest stringRequest = new StringRequest(Request.Method.GET, URLline,

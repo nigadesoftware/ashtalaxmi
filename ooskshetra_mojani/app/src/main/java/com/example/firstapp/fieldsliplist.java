@@ -163,7 +163,7 @@ public class fieldsliplist extends AppCompatActivity {
         String URLline;
         final Integer vhcode;
         vhcode=vehiclecode;
-        URLline = "http://206.84.230.83:80/webservice/controller/fieldslipRestController.php?view=upload&slipboyuserid="+Long.toString(Global.uid);
+        URLline = Global.staticip + ":80/webservice/controller/fieldslipRestController.php?view=upload&slipboyuserid="+Long.toString(Global.uid);
         Log.d("getxxx",URLline);
         JSONArray postparams = new JSONArray();
         mydb= new dbHelper(this);
