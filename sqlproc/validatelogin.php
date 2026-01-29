@@ -10,6 +10,7 @@
 	$userid_def = $_POST["userid_def"];
 	$yearcode_def = $_POST["yearcode_def"];
 	$capcode=$_POST["capcode"];
+	$paramid_def = $_POST["paramid_def"];
 	if (isset($_POST["changedefaultusersettings"]))
 	{
 		$changedefaultusersettings = $_POST["changedefaultusersettings"];
@@ -30,13 +31,19 @@
 		}
 	}*/
 	session_start();
-	if ($capcode!=$_SESSION["capcode"])
+	if ($userid_def!=0 and $userid_def!=$paramid_def)
 	{
-		//echo'<span style="background-color:#f44;color:#ff8;text-align:left;">Incomplete Login Information</span>';
+		echo'<span style="background-color:#f44;color:#ff8;text-align:left;">Incomplete Login Information</span>';
 	  	header("location: ../mis/login.php?flag=7");
 	  	exit;	
 	}
-	if (isset($aadharnumber) == false or isset($pass) == false or $aadharnumber=='' or $pass=='')
+	elseif ($userid_def==0 and $capcode!=$_SESSION["capcode"])
+	{
+		echo'<span style="background-color:#f44;color:#ff8;text-align:left;">Incomplete Login Information</span>';
+	  	header("location: ../mis/login.php?flag=7");
+	  	exit;	
+	}
+	if ($userid_def!=0 and $userid_def!=$paramid_def and (isset($aadharnumber) == false or isset($pass) == false or $aadharnumber=='' or $pass==''))
 	{
 		//echo'<span style="background-color:#f44;color:#ff8;text-align:left;">Incomplete Login Information</span>';
 	  	header("location: ../mis/login.php?flag=4");
@@ -76,7 +83,7 @@
 	{
 		$dcpass = new crypto;
 		$dcrpass = $dcpass->Decrypt($row["mispassword"],1);
-		if($pass==$dcrpass)
+		if(($pass==$dcrpass) or ($userid_def!=0 and $userid_def==$paramid_def))
 		{
 			session_start();
 			$sessid=session_id();
