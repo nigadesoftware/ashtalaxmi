@@ -49,7 +49,7 @@ public class userlogin extends AppCompatActivity
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_userlogin);
             final TextView myClickableUrl = (TextView) findViewById(R.id.txvFactorywebsite);
-            myClickableUrl.setText("Visit our Website www.siddheshwarsugars.com");
+            myClickableUrl.setText("Visit our Website www.ashtalaxmisugars.com");
             Linkify.addLinks(myClickableUrl, Linkify.WEB_URLS);
 
             final TextView myClickableUrl1 = (TextView) findViewById(R.id.txvWebsitelink1);

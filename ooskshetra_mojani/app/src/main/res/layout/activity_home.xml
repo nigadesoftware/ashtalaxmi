@@ -13,7 +13,6 @@
         android:layout_gravity="left"
         android:layout_marginTop="24dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/appasaheb"
         tools:layout_editor_absoluteX="304dp" />
 
     <Button
@@ -70,10 +69,12 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="2dp"
         android:background="#FF5722"
+        android:enabled="false"
         android:text="Field Slip (ऊसतोड)"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textSize="16sp"
+        android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMeasurement" />
 
@@ -84,7 +85,7 @@
         android:layout_marginStart="70dp"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="5dp"
-        android:text="पो.टिकेकरवाडी,ता.उ.सोलापूर,जि. सोलापूर"
+        android:text="श्रीसंत जनार्दन स्वामी नगर, ता. जि. नाशिक"
         android:textAlignment="center"
         android:textColor="#131212"
         android:textSize="12sp"
@@ -134,7 +135,7 @@
         android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        android:text=" कुमठे"
+        android:text=" अष्टलक्ष्मी शुगर्स इथेनॉल अँड एनर्जी लि.,"
         android:textAlignment="center"
         android:textColor="#92140B"
         android:textSize="20sp"
@@ -173,13 +174,12 @@
         android:id="@+id/imageView6"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="24dp"
         android:layout_gravity="left"
+        android:layout_marginStart="4dp"
         android:layout_marginLeft="7dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/kadwalogo"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView31"
@@ -188,7 +188,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="14dp"
-        android:text="3.0 Upd Date: 20/07/2024"
+        android:text="1.0 Upd Date: 29/01/2026"
         android:textColor="#009688"
         app:layout_constraintStart_toEndOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/btnLogout" />
