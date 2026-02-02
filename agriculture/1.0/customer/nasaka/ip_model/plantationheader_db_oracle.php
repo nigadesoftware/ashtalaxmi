@@ -223,6 +223,10 @@ class plantationheader extends swappform
         $result = oci_parse($this->connection, $query);
         if (oci_execute($result,OCI_NO_AUTO_COMMIT))
         {
+			oci_commit($this->connection);
+			$this->insertselected($this->plotnumber);
+			oci_commit($this->connection);
+
 			$query1 = "
 			update farmer set 
 			mobilenumber = ".$this->invl($this->mobilenumber,true)."
